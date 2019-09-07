@@ -26,12 +26,13 @@ A photo sharing  web app developed in Django 2.22 and  Bootstrap 4.
           python manage.py startapp posts
           
           
-Settings.py
+# Settings.py
 
 
                   
           # insta_project/settings.py
-          INSTALLED_APPS = [
+          INSTALLED_APPS =
+          [
           'django.contrib.admin',
           'django.contrib.auth',
           'django.contrib.contenttypes',
@@ -40,10 +41,61 @@ Settings.py
           'django.contrib.staticfiles',
           'posts.apps.PostsConfig', # new
            ]        
-                  
-                  
+                 
+    
           
+                 
+Now run python manage.py migrate to setup the new database for our project.                 
+                  
+  
+             
+  # Models              
+             from django.db import models
+             class Post(models.Model):
+                title = models.TextField()
+                cover = models.ImageField(upload_to='images/')
+
+                def __str__(self):
+                  return self.title
+                  
+                  
+                  
+# MEDIA_ROOT                  
+              # insta_project/settings.py
+              MEDIA_URL = '/media/'
+              MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+              
+              
+              
+              (insta) $ mkdir media
+              (insta) $ mkdir media/images
+              
+              
+              
+#Admin
+
+
+              # posts/admin.py
+              from django.contrib import admin
+
+              from .models import Post
+
+              admin.site.register(Post)
+              
+              
          
-       
-      
+  Then run the folloeing  commands           
+
+ 
+           python manage.py makemigrations
+           python manage.py migrate
+           
+           
+           
+           
+Now we can create a superuser account to access the admin and then execute runserver to spin up the local web server for the first time.
+
+
+           (insta) $ python manage.py createsuperuser
+           (insta) $ python manage.py runserver
       
