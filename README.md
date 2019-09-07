@@ -93,9 +93,15 @@ Now run python manage.py migrate to setup the new database for our project.
            
            
            
-Now we can create a superuser account to access the admin and then execute runserver to spin up the local web server for the first time.
+ creating a superuser account to access the admin and then execute runserver to spin up the local web server for the first time.
 
 
            (insta) $ python manage.py createsuperuser
            (insta) $ python manage.py runserver
+           
+           
+           
       
+
+
+Displaying posts which means urls.py, views.py, and template files.
