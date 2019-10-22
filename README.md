@@ -105,3 +105,12 @@ Now run python manage.py migrate to setup the new database for our project.
 
 
 Displaying posts which means urls.py, views.py, and template files.
+
+#  Preview
+
+
+![alt text](https://djangocentral.com/wp-content/uploads/2019/03/ezgif.com-video-to-gif.gif)
+
+
+
+
