@@ -1,12 +1,12 @@
-# Lux.com 
-# Django File (and Image) Uploads web-page
+<h2> <center> Lux.Com </center> </h2> 
+<b> Django Files and feeds Uploads web-page </b>
 
 
 A photo sharing  web app developed in Django 2.22 and  Bootstrap 4. 
 
  Requirements:
  
- 1)a virtual environment 
+ 1)A virtual environment 
       
       Python3 -m venv < env name>
       
@@ -17,7 +17,7 @@ A photo sharing  web app developed in Django 2.22 and  Bootstrap 4.
        
   Creating the project.
   
-           django-admin startproject insta_project 
+           django-admin startproject < project name  > 
            
            
  Creating  the application  for our project
