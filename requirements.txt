@@ -1,5 +1,5 @@
 dj-database-url==0.5.0
-Django==2.2.5
+Django==2.2.13
 gunicorn==19.9.0
 Pillow==6.1.0
 pkg-resources==0.0.0
